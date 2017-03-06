@@ -1,0 +1,41 @@
+{
+  "name": "jquery-backtotop",
+  "version": "0.0.1",
+  "description": "plugin to display a back to top button when scrolled",
+  "main": "lib/index.js",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-generic-plugin": "^0.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-env": "^1.1.4",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "eslint": "^3.12.2",
+    "watchify": "^3.8.0"
+  },
+  "scripts": {
+    "build:lib": "babel src -d lib",
+    "build:ex": "browserify example/index.js -v -t babelify -o build/bundle.js",
+    "lint": "eslint example --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannickBochatay/jquery-backtotop.git"
+  },
+  "keywords": [
+    "jquery",
+    "plugin",
+    "javascript",
+    "back to top"
+  ],
+  "author": "Yannick Bochatay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YannickBochatay/jquery-backtotop/issues"
+  },
+  "homepage": "https://github.com/YannickBochatay/jquery-backtotop#readme"
+}
